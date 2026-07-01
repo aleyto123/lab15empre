@@ -1,40 +1,9 @@
-# Laboratorio 9
+# CineSpoilerS Store
 
-## Integrantes
+Proyecto final empresarial desarrollado con React. La aplicacion presenta una
+base de e-commerce para comprar peliculas, consumir informacion desde TMDB,
+mantener un carrito global y simular una pasarela de pago.
 
-- Rony Bellido
-- Mauricio Rojas
-- Xiomara Garcia
-
-## 📸 Capturas del proceso
-
-## Bellido Chambi Rony Widmer
-# Capturas:
-### 1. Clonar repositorio
-![Proyecto creado](docs/im1.png)
-
-### 2. Levantar proyecto
-![Levantar proyecto](docs/im2.png)
-
-### 3. Consumir data de TMDB
-![Levantar proyecto](docs/im3.png)
-![Levantar proyecto](docs/im9.png)
-
-### 4. Implementar estado global (Zustand)
-![Levantar proyecto](docs/im4.png)
-![Levantar proyecto](docs/im41.png)
-
-### 5. Desarrollar todas los pages
-![Levantar proyecto](docs/im5.png)
-
-### 6. Agregar pasarela de pagos de película comprada (Simulación)
-![Levantar proyecto](docs/im6.png)
-![Levantar proyecto](docs/im61.png)
-
-### 7. Agregar tests al proyecto
-![Levantar proyecto](docs/im7.png)
-
-## Mauricio Rojas 
 ## Datos del informe
 
 - Alumno: Mauricio Lucianno Rojas Tello
@@ -92,6 +61,48 @@ La web usa una arquitectura simple por carpetas:
 - `/movies/:movieId`: detalle de una pelicula.
 - `/checkout`: resumen del carrito y pasarela de pago simulada.
 
+## Instalacion
+
+Clonar el repositorio:
+
+```powershell
+git clone https://github.com/blaxells-zlipper/evaempfinal.git
+cd evaempfinal
+```
+
+Instalar dependencias:
+
+```powershell
+npm install
+```
+
+Levantar el proyecto:
+
+```powershell
+npm run dev
+```
+
+Abrir en el navegador:
+
+```txt
+http://localhost:5173
+```
+
+## Variables de entorno para TMDB
+
+Crear un archivo `.env` en la raiz del proyecto usando `.env.example` como
+base:
+
+```env
+VITE_TMDB_API_URL=https://api.themoviedb.org/3
+VITE_TMDB_TOKEN=tu_token_de_lectura
+VITE_TMDB_API_KEY=tu_api_key
+```
+
+El archivo `.env` no se sube a GitHub porque contiene credenciales privadas.
+
+Si no se configura TMDB, la aplicacion usa datos locales de respaldo para que el
+proyecto siempre pueda ejecutarse.
 
 ## Como probar la web
 
@@ -131,6 +142,14 @@ Ejecutar tests:
 ```powershell
 npm test
 ```
+
+Estado validado:
+
+```txt
+Lint: OK
+Build: OK
+Tests: 2 passed
+Browser check: OK
 ```
 
 ## Evidencia visual incluida
@@ -144,12 +163,3 @@ npm test
 Node: v24.16.0
 npm: 11.16.0
 ```
-# Capturas:
-![Captura 1](docs2/imm1.jpeg)
-![Captura 2](docs2/imm2.jpeg)
-![Captura 3](docs2/imm3.jpeg)
-![Captura 4](docs2/imm4.jpeg)
-![Captura 5](docs2/imm5.jpeg)
-
-## Garcia Silva Xiomara
-# Capturas:
