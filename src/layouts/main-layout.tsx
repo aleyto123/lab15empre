@@ -2,6 +2,7 @@ import { Outlet } from "react-router-dom";
 
 import { Footer } from "@/components/layout/footer";
 import { Navbar } from "@/components/layout/navbar";
+import { PaymentModal } from "@/components/movies/payment-modal";
 
 export function MainLayout() {
   return (
@@ -13,6 +14,7 @@ export function MainLayout() {
       </main>
 
       <Footer />
+      <PaymentModal />
     </div>
   );
 }

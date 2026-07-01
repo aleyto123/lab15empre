@@ -1,75 +1,40 @@
-# React + TypeScript + Vite
+# Laboratorio 9
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Integrantes
 
-Currently, two official plugins are available:
+- Rony Bellido
+- Mauricio Rojas
+- Xiomara Garcia
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## 📸 Capturas del proceso
 
-## React Compiler
+## Bellido Chambi Rony Widmer
+# Capturas:
+### 1. Clonar repositorio
+![Proyecto creado](docs/im1.png)
 
-The React Compiler is enabled on this template. See [this documentation](https://react.dev/learn/react-compiler) for more information.
+### 2. Levantar proyecto
+![Levantar proyecto](docs/im2.png)
 
-Note: This will impact Vite dev & build performances.
+### 3. Consumir data de TMDB
+![Levantar proyecto](docs/im3.png)
+![Levantar proyecto](docs/im9.png)
 
-## Expanding the ESLint configuration
+### 4. Implementar estado global (Zustand)
+![Levantar proyecto](docs/im4.png)
+![Levantar proyecto](docs/im41.png)
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+### 5. Desarrollar todas los pages
+![Levantar proyecto](docs/im5.png)
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+### 6. Agregar pasarela de pagos de película comprada (Simulación)
+![Levantar proyecto](docs/im6.png)
+![Levantar proyecto](docs/im61.png)
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+### 7. Agregar tests al proyecto
+![Levantar proyecto](docs/im7.png)
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
-
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
-
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
-
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+## Mauricio Rojas 
+# Capturas:
+## Garcia Silva Xiomara
+# Capturas:

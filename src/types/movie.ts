@@ -3,4 +3,6 @@ export interface Movie {
   title: string;
   posterUrl: string;
   synopsis: string;
+  releaseDate?: string;
+  voteAverage?: number;
 }
