@@ -153,3 +153,40 @@ npm: 11.16.0
 
 ## Garcia Silva Xiomara
 # Capturas:
+## Implementación — Pasarela de Pago (Consumo de API, Estado Global, Checkout y Tests)
+
+### a. Clonar repositorio
+Clonación del repositorio del proyecto de forma local.
+
+![Clonar repositorio](doc/cap1.png)
+
+### b. Levantar proyecto
+Instalación de dependencias (npm install), configuración de variables de entorno y ejecución del servidor de desarrollo (npm run dev).
+
+![Levantar proyecto](doc/cap2.png)
+
+### c. Consumir data de TMDB
+Integración con la API de The Movie Database (TMDB) mediante Axios y React Query, incluyendo un mapper para transformar la respuesta de la API al modelo Movie usado en la UI.
+
+![Consumo de TMDB](doc/cap3.png)
+
+### d. Implementar estado global (Zustand)
+Creación de un store global con Zustand (useCartStore) para gestionar el carrito de compras (agregar, quitar y verificar películas).
+
+![Estado global Zustand](doc/cap4.png)
+
+### e. Desarrollar todas las pages
+Desarrollo de las páginas principales: HomePage, MoviesPage (con búsqueda y filtro por género) y MovieDetailPage (detalle de película con acción de compra conectada al store).
+
+![Pages del proyecto](doc/cap5.png)
+
+### f. Agregar pasarela de pagos de película comprada (Simulación)
+Implementación de un flujo de checkout simulado: formulario de datos de tarjeta con validaciones, resumen de compra y confirmación de pago exitoso, limpiando el carrito al finalizar.
+
+![Formulario de pago](doc/cap6.png)
+![Pago exitoso](doc/cap7.png)
+
+### g. Agregar tests al proyecto
+Configuración de Vitest + Testing Library, con pruebas unitarias sobre el store del carrito (cart-store.test.ts) y sobre el componente MovieCard (movie-card.test.tsx). Todos los tests pasan correctamente.
+
+![Tests pasando](doc/cap8.png)
